@@ -12,8 +12,8 @@
 %>
 <html>
 <head>
-    <script type="text/javascript" src="<%=basePath%>/static/tools/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="<%=basePath%>/static/tools/header.js"></script>
+    <script type="text/javascript" src="<%=basePath%>/tools/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>/tools/header.js"></script>
     <script>
         var basePath = "<%=basePath%>";
     </script>

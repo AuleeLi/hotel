@@ -35,8 +35,5 @@ public class OrderController {
     @GetMapping("/searchOrderByName")
     public List<OrderModel> searchOrderByName(@RequestParam(required = false) String customerName, @RequestParam Integer orderFlag) {
         return orderService.searchOrderByName(customerName, orderFlag);
-
-
-
     }
 }

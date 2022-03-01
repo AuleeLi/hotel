@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>111</title>
-    <script type="text/javascript" src="<%=basePath%>/static/js/welcome.js"></script>
+    <script type="text/javascript" src="<%=basePath%>/js/welcome.js"></script>
 </head>
 <body>
 
