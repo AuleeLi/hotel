@@ -9,10 +9,27 @@
 <%@ include file="/WEB-INF/header.jsp"%>
 <html>
 <head>
-    <title>111</title>
+    <title>美团酒店预订</title>
+    <link rel="stylesheet" type="text/css" href="css/welcome.css">
     <script type="text/javascript" src="<%=basePath%>/js/welcome.js"></script>
 </head>
 <body>
- aaa
+    <div id = "head" class="head">
+        <span id="login" class="login">立即登录</span>
+        <span id="register" class="register">注册</span>
+    </div>
+    <div id="home" class="home">
+        <div id="title" class="title">
+            <span id="hotel_name" class="hotel_name">没团·橘子酒店</span>
+            <span id="hotel_type" class="hotel_type">舒适型</span>
+            <span id="hotel_address" class="hotel_address"></span>
+        </div>
+        <div id="image_home" class="image_home">
+            <div id="big_image" class="big_image">
+                <img id="big_img" class="big_img" src="">
+            </div>
+            <div id="hotel_info" class="hotel_info"></div>
+        </div>
+    </div>
 </body>
 </html>
