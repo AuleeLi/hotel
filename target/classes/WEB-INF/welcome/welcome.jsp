@@ -9,7 +9,7 @@
 <%@ include file="/WEB-INF/header.jsp"%>
 <html>
 <head>
-    <title>美团酒店预订</title>
+    <title>没团酒店预订</title>
     <link rel="stylesheet" type="text/css" href="css/welcome.css">
     <script type="text/javascript" src="<%=basePath%>/js/welcome.js"></script>
 </head>
@@ -28,7 +28,12 @@
             <div id="big_image" class="big_image">
                 <img id="big_img" class="big_img" src="">
             </div>
-            <div id="hotel_info" class="hotel_info"></div>
+            <div id="hotel_info" class="hotel_info">
+                <img id="info_img" class="info_img" src="images/hotel_info.png">
+            </div>
+            <div id="hotel_images" class="hotel_images">
+
+            </div>
         </div>
     </div>
 </body>

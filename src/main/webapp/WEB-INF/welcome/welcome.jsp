@@ -28,7 +28,12 @@
             <div id="big_image" class="big_image">
                 <img id="big_img" class="big_img" src="">
             </div>
-            <div id="hotel_info" class="hotel_info"></div>
+            <div id="hotel_info" class="hotel_info">
+                <img id="info_img" class="info_img" src="images/hotel_info.png">
+            </div>
+            <div id="hotel_images" class="hotel_images">
+
+            </div>
         </div>
     </div>
 </body>

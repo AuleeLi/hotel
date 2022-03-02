@@ -92,14 +92,28 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    cursor: url('../images/enlarge48.png'),auto;
 }
 .home .image_home .hotel_info {
     position: absolute;
     top: 0%;
     left: 61%;
-    width: 20%;
-    height: 70%;
+    width: 25%;
+    height: 90%;
     border: 1px solid #999999;
     background-color: white;
     border-radius: 5px;
+}
+.home .image_home .hotel_info .info_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.home .image_home .hotel_images {
+    position: absolute;
+    top: 71%;
+    left: 20%;
+    width: 40%;
+    height: 28%;
+    background-color: white;
 }
