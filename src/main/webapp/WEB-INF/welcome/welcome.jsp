@@ -9,7 +9,7 @@
 <%@ include file="/WEB-INF/header.jsp"%>
 <html>
 <head>
-    <title>美团酒店预订</title>
+    <title>没团酒店预订</title>
     <link rel="stylesheet" type="text/css" href="css/welcome.css">
     <script type="text/javascript" src="<%=basePath%>/js/welcome.js"></script>
 </head>
