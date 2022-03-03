@@ -31,4 +31,22 @@ public class LoginController {
         modelAndView.setViewName("login/login");
         return modelAndView;
     }
+    @ApiOperation("用户协议跳转")
+    @ApiImplicitParams({
+    })
+    @GetMapping("/agreement")
+    public ModelAndView agreement() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login/agreement");
+        return modelAndView;
+    }
+    @ApiOperation("隐私政策跳转")
+    @ApiImplicitParams({
+    })
+    @GetMapping("/policy")
+    public ModelAndView policy() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login/policy");
+        return modelAndView;
+    }
 }

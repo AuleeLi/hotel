@@ -41,7 +41,6 @@ body {
     left: 60%;
     width: 20%;
     height: 40%;
-    /*background-color: #dc6e45;*/
 }
 .login_home .type_head {
     position: absolute;
@@ -96,6 +95,11 @@ body {
     background-size: 15% 100%;
     background-image: url("../images/account_back_img.png");
 }
+#login_password {
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    background-image: url("../images/password.png");
+}
 .login_home .login_info .option .forget {
     position: absolute;
     left: 50%;
@@ -103,7 +107,7 @@ body {
     height: 10%;
     text-align: right;
     font-size: 14px;
-    color: #dc6e45;
+    color: #fe8c00;
 }
 .login_home .login_info .option .forget:hover {
     color: #dc6e45;
@@ -121,4 +125,46 @@ body {
     line-height: 40px;
     right: 30%;
     background-color: #ffc300;
+}
+.login_home .login_info .option_register {
+     margin-top: 0px;
+     width: 100%;
+     height: 30px;
+     float: left;
+     cursor: pointer;
+     font-size: 14px;
+     color: #6c6c6c;
+ }
+.login_home .login_info .option_register .no_have {
+    display:inline;
+}
+.login_home .login_info .option_register .register {
+    display:inline;
+    font-size: 14px;
+    color: #fe8c00;
+}
+.login_home .login_info .option .register:hover {
+    color: #f18500;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login_home .login_info .option_end {
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.login_home .login_info .option_end .agreement {
+    width: 70%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: 仿宋;
+    text-align: justify;
+    right: 30%;
+}
+.login_home .login_info .option_end .agreement a {
+    color: #dc6e45;
 }
