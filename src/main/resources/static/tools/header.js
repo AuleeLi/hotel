@@ -45,6 +45,42 @@ function ajaxJsonRequest(rurl, onCompleteFun, onFailureFun, params, asynFlag) {
         }
     });
 }
+function ajaxRequestGet(rurl, onCompleteFun, onFailureFun, params, asynFlag) {
+    var async = true;
+    var param = "";
+    if (params != undefined) {
+        param = params;
+    }
+    if (asynFlag != undefined) {
+        if ((asynFlag == false) || (asynFlag == "false")) {
+            async = false;
+        }
+        else {
+            async = true;
+        }
+    }
+    if (onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()) {
+        onCompleteFun = "defaultSuccessCallBack";//使用缺省function
+    }
+    if (onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()) {
+        onFailureFun = "defaultFailureCallBack";//使用缺省function
+    }
+    jQuery.ajax
+    ({
+        async: async,
+        type: "GET",
+        url: rurl,
+        contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+        data: param,
+        cache:false,
+        dataType: 'json',
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("__REQUEST_TYPE", "AJAX_REQUEST");
+        },
+        success: eval(onCompleteFun),
+        error: eval(onFailureFun)
+    });
+}
 
 /**
  * AJAX请求调用的函数,该函数可以把form内部的所有可提交变量全部提交到后台

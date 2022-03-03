@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id = "head" class="head">
-        <span id="login" class="login">立即登录</span>
+        <span id="login" class="login" onclick="login()">立即登录</span>
         <span id="register" class="register">注册</span>
     </div>
     <div id="home" class="home">

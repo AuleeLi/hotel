@@ -1,0 +1,118 @@
+body {
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.title {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 30%;
+    height: 64px;
+    background-image: url("../images/hotel_brand.png");
+    background-repeat: no-repeat;
+}
+.title .title_img {
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    width: 128px;
+    height: 54px;
+}
+.home_left {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 30%;
+    height: 40%;
+}
+.home_left .left_img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.login_home {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    width: 20%;
+    height: 40%;
+    /*background-color: #dc6e45;*/
+}
+.login_home .type_head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+.login_home .type_head .login_type {
+    font-family: 宋体;
+    color: #6c6c6c;
+    cursor: pointer;
+    font-size: 14px;
+}
+.login_home .type_head .login_type:hover {
+    color: #dc6e45;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login_home .login_info {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    height: 60%;
+}
+.login_home .login_info .info {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+.login_home .login_info .option {
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.login_home .login_info .info .login_info_input {
+    width: 70%;
+    height: 80%;
+    border: 1px solid #676767;
+    outline: none;
+}
+.login_home .login_info .option .forget {
+    position: absolute;
+    left: 50%;
+    width: 20%;
+    height: 10%;
+    text-align: right;
+    font-size: 14px;
+    color: #dc6e45;
+}
+.login_home .login_info .option .forget:hover {
+    color: #dc6e45;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.login_home .login_info .option .login {
+    width: 70%;
+    height: 80%;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 宋体;
+    text-align: center;
+    line-height: 40px;
+    right: 30%;
+    background-color: #ffc300;
+}
