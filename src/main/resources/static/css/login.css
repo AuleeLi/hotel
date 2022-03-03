@@ -131,7 +131,6 @@ body {
      width: 100%;
      height: 30px;
      float: left;
-     cursor: pointer;
      font-size: 14px;
      color: #6c6c6c;
  }
@@ -143,7 +142,7 @@ body {
     font-size: 14px;
     color: #fe8c00;
 }
-.login_home .login_info .option .register:hover {
+.login_home .login_info .option_register .register:hover {
     color: #f18500;
     cursor: pointer;
     font-weight: bold;
