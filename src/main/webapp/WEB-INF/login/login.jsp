@@ -28,10 +28,14 @@
         </div>
         <div id="login_info" class="login_info">
             <span id="account" class="info">
-                <input type="text" name="" id="login_account_num" class="login_info_input" onfocus="changeColor(this, true)" onblur="changeColor(this, false)">
+                <input type="text" name="" id="login_account_num" class="login_info_input"
+                       placeholder="请输入帐号"
+                       onfocus="changeColor(this, true)" onblur="changeColor(this, false)">
             </span>
             <span id="password" class="info">
-                <input type="password" name="" id="login_password" class="login_info_input" onfocus="changeColor(this, true)" onblur="changeColor(this, false)">
+                <input type="password" name="" id="login_password" class="login_info_input"
+                       placeholder="请输入密码"
+                       onfocus="changeColor(this, true)" onblur="changeColor(this, false)">
             </span>
             <span id="forget" class="option">
                 <div class="forget">忘记密码？</div>

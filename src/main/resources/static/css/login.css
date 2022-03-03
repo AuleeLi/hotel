@@ -89,6 +89,12 @@ body {
     height: 80%;
     border: 1px solid #676767;
     outline: none;
+    padding-left: 48px;
+}
+#login_account_num {
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    background-image: url("../images/account_back_img.png");
 }
 .login_home .login_info .option .forget {
     position: absolute;
