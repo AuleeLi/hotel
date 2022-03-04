@@ -31,24 +31,26 @@
                 <input type="text" name="" id="login_account_num" class="login_info_input"
                        placeholder="请输入帐号"
                        onfocus="changeColor(this, true)" onblur="changeColor(this, false)">
+                <div id="tips_account" class="tips">请输入帐号</div>
             </span>
             <span id="password" class="info">
                 <input type="password" name="" id="login_password" class="login_info_input"
                        placeholder="请输入密码"
                        onfocus="changeColor(this, true)" onblur="changeColor(this, false)">
+                <div id="tips_psd" class="tips">请输入密码</div>
             </span>
             <span id="forget" class="option">
                 <div class="forget">忘记密码？</div>
             </span>
             <span id="login" class="option">
-                <div class="login">登录</div>
+                <div class="login" onclick="login()">登录</div>
             </span>
             <span id="register" class="option_register">
                 <div class="no_have">还没有帐号？</div>
                 <div class="register">免费注册</div>
             </span>
             <span  class="option_end">
-                <div class="agreement">
+                <div id="agreement" class="agreement">
                     <input type="checkbox" id="agreement_check">
                     我已阅读并同意
                     <a href="<%=basePath%>login/agreement" target="_blank">《没团用户协议》</a>
@@ -58,5 +60,6 @@
             </span>
         </div>
     </div>
+<input type="hidden" id="nextPage" value="${nextPage}">
 </body>
 </html>

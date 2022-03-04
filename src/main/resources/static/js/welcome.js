@@ -6,5 +6,5 @@ function success(data) {
     $("#big_img").attr("src", basePath + "images/test.png");
 }
 function login() {
-    window.location.href = basePath + "login/loginHome";
+    window.location.href = basePath + "login/loginHome?nextPage=welcome";
 }

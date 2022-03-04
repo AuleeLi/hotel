@@ -79,7 +79,6 @@ body {
     width: 100%;
     height: 50px;
     float: left;
-    cursor: pointer;
     font-size: 14px;
     color: #6c6c6c;
 }
@@ -115,6 +114,12 @@ body {
     font-weight: bold;
 
 }
+.login_home .login_info .info .tips {
+    color: red;
+    font-size: 14px;
+    display: none;
+
+}
 .login_home .login_info .option .login {
     width: 70%;
     height: 80%;
@@ -124,6 +129,7 @@ body {
     text-align: center;
     line-height: 40px;
     right: 30%;
+    cursor: pointer;
     background-color: #ffc300;
 }
 .login_home .login_info .option_register {

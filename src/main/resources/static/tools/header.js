@@ -59,10 +59,12 @@ function ajaxRequestGet(rurl, onCompleteFun, onFailureFun, params, asynFlag) {
             async = true;
         }
     }
-    if (onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()) {
+    // onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()
+    if (isEmpty(onCompleteFun)) {
         onCompleteFun = "defaultSuccessCallBack";//使用缺省function
     }
-    if (onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()) {
+    // onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()
+    if (isEmpty(onFailureFun)) {
         onFailureFun = "defaultFailureCallBack";//使用缺省function
     }
     jQuery.ajax
@@ -108,10 +110,12 @@ function ajaxFormRequest(rurl, onCompleteFun, onFailureFun, form, asynFlag) {
             async = true;
         }
     }
-    if (onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()) {
+    // onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()
+    if (isEmpty(onCompleteFun)) {
         onCompleteFun = "defaultSuccessCallBack";//使用缺省function
     }
-    if (onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()) {
+    // onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()
+    if (isEmpty(onFailureFun)) {
         onFailureFun = "defaultFailureCallBack";//使用缺省function
     }
     $.ajax({
@@ -149,10 +153,12 @@ function ajaxFormFileRequest(rurl, onCompleteFun, onFailureFun, form, asynFlag) 
             async = true;
         }
     }
-    if (onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()) {
+    // onCompleteFun == undefined || onCompleteFun == null || onCompleteFun == "null" || onCompleteFun.isEmpty()
+    if (isEmpty(onCompleteFun)) {
         onCompleteFun = "defaultSuccessCallBack";//使用缺省function
     }
-    if (onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()) {
+    // onFailureFun == undefined || onFailureFun == null || onFailureFun == "null" || onFailureFun.isEmpty()
+    if (isEmpty(onFailureFun)) {
         onFailureFun = "defaultFailureCallBack";//使用缺省function
     }
 
@@ -235,6 +241,13 @@ String.prototype.isEmpty = function () {
         return true;
     else
         return false;
+}
+function isEmpty(param) {
+    if (param == undefined || param == null || param == "null" || typeof(param) == "undefined" || param.trim() == "") {
+        return true;
+    } else {
+        return false;
+    }
 }
 /**
  * @Description: ajax调用缺省的操作成功回调function
